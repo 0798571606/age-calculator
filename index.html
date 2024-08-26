@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Form Validation</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Enter your birthday and see your current age</h1>
+    <div class="age-box">
+      <div class="calculator">
+        <div class="box-day input">
+          <label id="for-day" for="day">D A Y</label>
+          <input id="day" type="number" placeholder="DD">
+        </div>
+        <div class="box-month input">
+          <label id="for-month" for="month">M O N T H</label>
+          <input id="month" type="number" placeholder="MM">
+        </div>
+        <div class="box-years input">
+          <label id="for-year" for="year">Y E A R S</label>
+          <input id="year" type="number" placeholder="YYYY">
+        </div>
+
+        <button onclick="calculateAge()"> <img src="assets/images/icon-arrow.svg" alt=""> </button>
+      </div>
+      <div class="result">
+        <div class="ans"><span id="value-years">--</span>
+          <div class="result-years">years</div>
+        </div>
+        <div class="ans"><span id="value-months">--</span>
+          <div class="result-months">months</div>
+        </div>
+        <div class="ans"><span id="value-days">--</span>
+          <div class="result-days">days</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
